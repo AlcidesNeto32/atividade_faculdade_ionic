@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Ficha de Exame
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -17,11 +17,11 @@
 
 <ion-card>
   <ion-card-header>
-    <ion-input readonly="true" label = "Senha: " value = "{{inputNovaSenha}}"></ion-input>
+    <ion-input readonly="true" label = "Senha: " value = "{{senhas.inputNovaSenha}}"></ion-input>
   </ion-card-header>
   <ion-card-content>
-    <ion-button expand="block" (click)="senhas.somaGeral()">Senha Geral</ion-button>
-    <ion-button expand="block" (click)="senhas.somaPrior()">Senha Prioritária</ion-button>
-    <ion-button expand="block" (click)="senhas.somaExame()">Senha Exame</ion-button>
+    <ion-button expand="block" (click)="senhas.novaSenha('SG')">Senha Geral</ion-button>
+    <ion-button expand="block" (click)="senhas.novaSenha('SP')">Senha Prioritária</ion-button>
+    <ion-button expand="block" (click)="senhas.novaSenha('SE')">Senha Exame</ion-button>
   </ion-card-content>
 </ion-card>

@@ -7,7 +7,6 @@ import { SenhasService } from '../services/senhas'
   standalone: false,
 })
 export class Tab1Page {
-  inputNovaSenha: string = ''
   constructor(public senhas: SenhasService) {}
 
 }
